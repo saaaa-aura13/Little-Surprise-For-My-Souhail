@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Happy Monthsary</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sniglet:wght@400;800&family=Nunito:wght@400;600;700&family=Caveat:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="surprise.css">
+<link rel="stylesheet" href="icons.css">
+<link rel="stylesheet" href="features.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23ff4d94' d='M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z'/%3E%3C/svg%3E">
+</head>
+<body>
+<div class="orb o1"></div><div class="orb o2"></div><div class="orb o3"></div>
+<div id="floaty" aria-hidden="true"></div>
+<div class="lock" id="lock" role="dialog" aria-modal="true" aria-label="Enter the secret code">
+  <div class="lockcard glass" id="lockcard">
+    <div class="lk" data-ico="lock"></div>
+    <h2>Just for you</h2>
+    <p class="sub" id="lockmsg">Enter our secret code to come in.</p>
+    <div class="dots" id="dots" aria-hidden="true"></div>
+    <div class="pad" id="pad"></div>
+    <p class="hintt" id="hintt"></p>
+  </div>
+</div>
+
+<main id="app" inert>
+  <section class="hero">
+    <div class="emblem" aria-hidden="true" data-ico="heart"></div>
+    <p class="small" id="to"></p>
+    <h1 class="big" id="title"></h1>
+    <p class="sub"></p>
+    <div><span class="pill glass" id="days"></span><span class="pill glass" id="next"></span></div>
+    <button class="scroll" id="scroll" type="button">Scroll for surprises <span data-ico="down"></span></button>
+  </section>
+
+  <h2 class="sec" id="pick">Pick a surprise</h2>
+  <h4>Explore these surprises while the music plays</h4>
+  <section class="grid" aria-label="Surprises">
+    <button class="tile glass" data-open="music"><span class="ic" data-ico="headphones"></span><b>Songs for you</b><small>Press open to play a song</small></button>
+     <button class="tile glass" data-open="letter"><span class="ic" data-ico="mail"></span><b>Letter</b><small>Words straight from my heart</small></button>
+    <button class="tile glass" data-open="gift"><span class="ic" data-ico="gift"></span><b>Gift</b><small>Unwrap something i made for you</small></button>
+    <button class="tile glass" data-open="reasons"><span class="ic" data-ico="star"></span><b>Reasons</b><small>Why you're my favorite</small></button>
+    <button class="tile glass" data-open="quiz"><span class="ic" data-ico="help"></span><b>Love quiz</b><small>How well do you know me?</small></button>
+    <button class="tile glass" data-open="wheel"><span class="ic" data-ico="award"></span><b>Spin the wheel</b><small>Spin and win a sweet prize</small></button>
+    <button class="tile glass" data-open="timeline"><span class="ic" data-ico="calendar"></span><b>Our story</b><small>How it all began</small></button>
+    <button class="tile glass" data-open="when"><span class="ic" data-ico="message"></span><b>Open when</b><small>A note for your every mood</small></button>
+  </section>
+  <p class="foot" id="foot"></p>
+</main>
+
+<div id="modal" role="dialog" aria-modal="true" aria-label="Surprise"><div class="panel glass" id="panel"></div></div>
+
+<script src="surprise.js"></script>
+</body>
+</html>
